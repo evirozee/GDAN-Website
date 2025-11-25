@@ -4,3 +4,7 @@ function goToSection(sectionNum) {
         carouselItems[i].style.transform = `translateX(-${90*sectionNum}vw)`;
     }
 }
+
+function init() {
+    document.body.ondragstart = function () { return false; };
+}
